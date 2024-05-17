@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COSC3407_Assignment2_Question5", "COSC3407_Assignment2_Question5\COSC3407_Assignment2_Question5.csproj", "{09AB4D7F-110B-41BD-93CA-09A8C473EF0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListLib", "LinkedListLib\LinkedListLib.csproj", "{DFDAC0E0-78DB-4406-B6E6-6A40E363126D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09AB4D7F-110B-41BD-93CA-09A8C473EF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09AB4D7F-110B-41BD-93CA-09A8C473EF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09AB4D7F-110B-41BD-93CA-09A8C473EF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09AB4D7F-110B-41BD-93CA-09A8C473EF0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFDAC0E0-78DB-4406-B6E6-6A40E363126D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFDAC0E0-78DB-4406-B6E6-6A40E363126D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFDAC0E0-78DB-4406-B6E6-6A40E363126D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFDAC0E0-78DB-4406-B6E6-6A40E363126D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61B8E450-52FB-4B7F-8FB3-EFC04C0871E1}
+	EndGlobalSection
+EndGlobal
