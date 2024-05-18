@@ -82,38 +82,41 @@ namespace LinkedListLib
             }
             return counter;
         }
-        public bool FindAndRemove(int value)
+        public int FindAndRemove(int index)
         {
+            int saveVal;
             if (IsEmpty())
             {
-                return false;
+                return -1;
             }
             else
             {
                 Node? currNode = head;
-                if (currNode.value == value)
-                {
-                    head = currNode.next;
-                    Console.WriteLine($"Removed {value} from the list");
-                }
                 for (int i = 0; i < Size(); i++) //iterates through the list with the currNode. 
                 {
-                    if (currNode?.next?.value == value)
+                    if(index == 0)
                     {
+                        saveVal = currNode.value;
+                        head = currNode.next;
+                        return saveVal;
+                    }
+                    else if (i == index)
+                    {
+                        saveVal = currNode.value;
+                        while (currNode.next == null || currNode.next.next == null)
+                        {
+                            Task.Delay(1).Wait();
+                        }
                         currNode.next = currNode.next.next;
-                        return true;
+                        return saveVal;
                     }
                     else
                     {
                         currNode = currNode?.next;
                     }
                 }
-                if (currNode == null)
-                {
-                    return false;
-                }
             }
-            return true;
+            return -1;
         }
 
         public void PrintLinkedList()
@@ -134,5 +137,4 @@ namespace LinkedListLib
         }
     }
 }
-
 

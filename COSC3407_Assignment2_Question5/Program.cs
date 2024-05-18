@@ -46,16 +46,11 @@ internal class Program
             }
             else
             {
-                int removeNum = rand.Next(1, 1854);
+                int removeIndex = rand.Next(0, linky.Size());
 
-                if (linky.FindAndRemove(removeNum))
-                {
-                    Console.WriteLine($"Removed{removeNum} from the linked list");
-                }
-                else
-                {
-                    Console.WriteLine($"{removeNum} not in linked list");
-                }
+                int removedNum = linky.FindAndRemove(removeIndex);
+                Console.WriteLine($"removed {removedNum} at index {removeIndex}");
+
             }
             Task.Delay(1000).Wait();
         }
