@@ -5,7 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Random;
-
+/*
+ * COSC3407 Assignment 2 Question 5
+ *
+ *  by Mitchell Plunket
+ *  Student ID : 239499150
+ *  
+ *  custom linked list data structure class for our threads in Program.cs to operate on
+ */
 namespace LinkedListLib
 {
     public class LinkedList
@@ -82,7 +89,7 @@ namespace LinkedListLib
             }
             return counter;
         }
-        public int FindAndRemove(int index)
+        public int Remove()
         {
             int saveVal;
             if (IsEmpty())
@@ -94,20 +101,16 @@ namespace LinkedListLib
                 Node? currNode = head;
                 for (int i = 0; i < Size(); i++) //iterates through the list with the currNode. 
                 {
-                    if(index == 0)
+                    if (head.next == null)
                     {
                         saveVal = currNode.value;
-                        head = currNode.next;
+                        head = null;
                         return saveVal;
                     }
-                    else if (i == index)
+                    else if (currNode.next.next == null)
                     {
-                        saveVal = currNode.value;
-                        while (currNode.next == null || currNode.next.next == null)
-                        {
-                            Task.Delay(1).Wait();
-                        }
-                        currNode.next = currNode.next.next;
+                        saveVal = currNode.next.value;
+                        currNode.next = null;
                         return saveVal;
                     }
                     else
